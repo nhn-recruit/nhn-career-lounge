@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -7,11 +7,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'M PLUS Rounded 1c', 'Hiragino Sans', sans-serif;
+      font-family: 'Pretendard', 'M PLUS Rounded 1c', 'Hiragino Sans', sans-serif;
       font-weight: 400;
       background: #F4EFE3;
       color: #1A1A1A;
@@ -99,7 +100,7 @@
     .hero__title {
       font-family: 'M PLUS Rounded 1c', sans-serif;
       font-weight: 900;
-      font-size: clamp(52px, 8vw, 90px);
+      font-size: clamp(42px, 6vw, 72px);
       letter-spacing: -0.02em;
       line-height: 1; color: var(--dark); margin-bottom: 10px;
       display: block; padding: 0;
@@ -355,8 +356,8 @@
         <span class="dtag dtag--yellow">📍 NHNアトリエ</span>
         <span class="dtag dtag--coral">🎟 参加無料</span>
         <span style="display:inline-flex;gap:6px;flex-wrap:nowrap;align-items:center;">
-          <span class="dtag" style="background:#fff;border:2.5px solid var(--dark);color:var(--dark);">26卒</span>
-          <span class="dtag" style="background:#fff;border:2.5px solid var(--dark);color:var(--dark);">27卒以降も歓迎!</span>
+          <span class="dtag" style="background:#fff;border:2.5px solid var(--dark);color:var(--dark);">27卒</span>
+          <span class="dtag" style="background:#fff;border:2.5px solid var(--dark);color:var(--dark);">28卒以降も歓迎!</span>
         </span>
       </div>
       <a href="#apply"><span class="dtag dtag--dark" style="font-size:16px;padding:14px 32px;border-radius:99px;cursor:pointer;">参加を申し込む →</span></a>
@@ -392,10 +393,6 @@
     <div class="about__body">
       <span class="sec-label">About the Event</span>
       <h2 class="sec-title">自分に合う<br>キャリアを見つける<br>１日に。</h2>
-      <!-- fixed squiggle: wider viewBox, more waves, no cutoff -->
-      <svg class="squig" width="220" height="14" viewBox="0 0 220 14" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 10 Q13.75 2 27.5 10 Q41.25 18 55 10 Q68.75 2 82.5 10 Q96.25 18 110 10 Q123.75 2 137.5 10 Q151.25 18 165 10 Q178.75 2 192.5 10 Q206.25 18 220 10" stroke="#5ABDB0" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
       <p>NHNグループが主催する回遊型のキャリアイベントです。堅苦しい説明会とは違い、気になるブースを自由に巡りながら、社員と気軽に話してリアルな職場の雰囲気を体感できます。</p>
       <p>ゲーム・IT・クラウドなど多彩な事業を展開するグループ各社の社員たちが、あなたの「知りたい」に直接答えます。</p>
 
@@ -468,9 +465,6 @@
   <div class="sec-inner">
     <span class="sec-label">Event Contents</span>
     <h2 class="sec-title">５つのコンテンツで<br>NHNグループを知ろう</h2>
-    <svg class="squig" width="220" height="14" viewBox="0 0 220 14" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 10 Q13.75 2 27.5 10 Q41.25 18 55 10 Q68.75 2 82.5 10 Q96.25 18 110 10 Q123.75 2 137.5 10 Q151.25 18 165 10 Q178.75 2 192.5 10 Q206.25 18 220 10" stroke="#F0C840" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
 
     <div class="features__grid">
 
@@ -578,9 +572,6 @@
       <div>
         <span class="sec-label">Program</span>
         <h2 class="sec-title">タイム<br>スケジュール</h2>
-        <svg class="squig" width="220" height="14" viewBox="0 0 220 14" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 10 Q13.75 2 27.5 10 Q41.25 18 55 10 Q68.75 2 82.5 10 Q96.25 18 110 10 Q123.75 2 137.5 10 Q151.25 18 165 10 Q178.75 2 192.5 10 Q206.25 18 220 10" stroke="#F07060" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
         <p style="font-size:14px;font-weight:400;line-height:1.95;color:#555;">当日は受付後すぐにグループ全体説明からスタート。その後は自由にブースを回って、じっくり話を聞いてみてください。</p>
 
         <!-- Clock illustration -->
@@ -628,9 +619,6 @@
     <div>
       <span class="sec-label">For Whom</span>
       <h2 class="sec-title">こんな方に<br><span style="color:var(--teal)">おすすめ！</span></h2>
-      <svg class="squig" width="220" height="14" viewBox="0 0 220 14" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 10 Q13.75 2 27.5 10 Q41.25 18 55 10 Q68.75 2 82.5 10 Q96.25 18 110 10 Q123.75 2 137.5 10 Q151.25 18 165 10 Q178.75 2 192.5 10 Q206.25 18 220 10" stroke="#C8B4F0" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
       <ul class="cklist">
         <li><span class="ck-icon">✓</span>ゲーム・IT・クラウド業界に興味がある</li>
         <li><span class="ck-icon">✓</span>若手から挑戦できる環境を知りたい</li>
@@ -663,7 +651,7 @@
     <h2>参加を申し込む</h2>
     <p>定員に達し次第、受付を終了します。<br>お早めにお申し込みください。</p>
     <div class="cta-deadline">⏰ 申し込み締め切り：2026年5月30日（金）23:59</div><br>
-    <a href="https://docs.google.com/forms/" target="_blank" rel="noopener" class="cta-btn">📋 &nbsp;Google フォームから申し込む</a>
+    <a href="https://forms.gle/HCw9sLSsLCv3NBJv5" target="_blank" rel="noopener" class="cta-btn">📋 &nbsp;Google フォームから申し込む</a>
     <p class="cta-note">ご入力いただいた情報は本イベントの運営のみに使用します。</p>
   </div>
 </section>
@@ -689,7 +677,7 @@
     </div>
     <div class="faq-item">
       <div class="faq-q"><span class="faq-qi">Q</span><span>会場へのアクセスを教えてください。</span></div>
-      <p class="faq-a">NHNアトリエ（東京都港区西新橋3丁目1-8）。御成門駅（都営三田線）徒歩5分 / 内幸町駅（都営三田線）徒歩7分。</p>
+      <p class="faq-a">■ 最寄り駅<br>日比谷線虎ノ門ヒルズ駅より徒歩4分（A1、A2番出口）<br>銀座線虎ノ門駅より徒歩7分（1番または9番出口）<br>三田線御成門駅より徒歩7分（A5番出口）<br>JR新橋駅より徒歩15分</p>
     </div>
   </div>
 </section>

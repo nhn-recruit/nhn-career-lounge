@@ -296,6 +296,7 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero__inner        { grid-template-columns: 1fr; }
+      .hero__illus        { display: none; }
       .overview__inner    { grid-template-columns: 1fr 1fr; }
       .ov-item            { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); }
       .about__inner       { grid-template-columns: 1fr; }
@@ -306,9 +307,23 @@
       .program__grid      { grid-template-columns: 1fr; }
       .forwhom__inner     { grid-template-columns: 1fr; }
       .nav__links         { display: none; }
+      img                 { max-width: 100%; height: auto; }
     }
     @media (max-width: 540px) {
       .overview__inner    { grid-template-columns: 1fr; }
+      .hero               { padding: 80px 16px 48px; }
+      .sec                { padding: 56px 16px; }
+      .nav__inner         { padding: 0 16px; }
+      .nav__cta           { font-size: 12px; padding: 7px 14px; }
+      .hero__title        { font-size: clamp(36px, 10vw, 52px); }
+      .cta-btn            { font-size: 15px; padding: 18px 28px; width: 100%; text-align: center; }
+      .cta-deadline       { font-size: 12px; padding: 10px 16px; text-align: center; }
+      .ch-card            { padding: 20px; }
+      .ch-card__illus-wrap { display: none; }
+      .about__logos       { gap: 16px; }
+      .about__logos svg   { height: 24px; }
+      .forwhom__inner > div:last-child { display: none; }
+      .footer__inner      { flex-direction: column; align-items: flex-start; gap: 12px; }
     }
   </style>
 </head>
@@ -500,12 +515,6 @@
           </div>
           <div class="ch-card__illus-wrap" style="flex-shrink:0;width:120px;">
             <img src="./images/board.png" alt="ブースツアー" width="120" height="130" style="display:block;">
-              <ellipse cx="73" cy="66" rx="5" ry="3" fill="#fff" opacity=".35"/>
-              <circle cx="50" cy="18" r="14" fill="url(#c2-sk)" filter="url(#c2f-s)"/>
-              <ellipse cx="44" cy="12" rx="5" ry="3" fill="#fff" opacity=".35"/>
-              <ellipse cx="50" cy="8" rx="12" ry="7" fill="#2A1810"/>
-              <text x="86" y="108" font-size="12" fill="#F0C840">✦</text>
-            </svg>
           </div>
         </div>
       </div>
@@ -649,8 +658,8 @@
 
     <span style="font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.75);display:block;margin-bottom:12px;">Entry</span>
     <h2>参加を申し込む</h2>
-    <p>定員に達し次第、受付を終了します。<br>お早めにお申し込みください。</p>
-    <div class="cta-deadline">⏰ 申し込み締め切り：2026年5月30日（金）23:59</div><br>
+    <p>定員に達し次第、受付を終了します。<br>お早めにお申し込みください。<br><span style="font-size:13px;color:rgba(255,255,255,.75);">※参加枠の都合上、ご参加いただけない場合がございます。<br>参加可否は、5月22日（金）に、メールアドレス宛にご連絡いたします。</span></p>
+    <div class="cta-deadline">⏰ 申し込み締め切り：2026年5月20日（水）23:59</div><br>
     <a href="https://forms.gle/HCw9sLSsLCv3NBJv5" target="_blank" rel="noopener" class="cta-btn">📋 &nbsp;Google フォームから申し込む</a>
     <p class="cta-note">ご入力いただいた情報は本イベントの運営のみに使用します。</p>
   </div>

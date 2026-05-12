@@ -293,6 +293,36 @@
     .footer__cos { font-size: 12px; font-weight: 400; color: rgba(255,255,255,.4); letter-spacing: .06em; }
     .footer__copy { font-size: 12px; font-weight: 400; color: rgba(255,255,255,.3); }
 
+    /* ── JOBS ── */
+    .jobs-sec { background: #fff; border-top: 3px solid var(--dark); border-bottom: 3px solid var(--dark); }
+    .jobs-co {
+      border: 2.5px solid var(--dark); border-radius: 22px;
+      padding: 32px; margin-bottom: 28px; background: var(--cream);
+    }
+    .jobs-co:last-child { margin-bottom: 0; }
+    .jobs-co__hd {
+      display: grid; grid-template-columns: auto 1fr; gap: 28px;
+      align-items: start; padding-bottom: 24px; margin-bottom: 24px;
+      border-bottom: 1.5px solid var(--border);
+    }
+    .jobs-co__logo-wrap { display: flex; flex-direction: column; gap: 8px; min-width: 160px; }
+    .jobs-co__logo-wrap svg { height: 26px; width: auto; }
+    .jobs-co__badge {
+      display: inline-block; font-size: 10px; font-weight: 700;
+      letter-spacing: .08em; padding: 3px 10px; border-radius: 99px; color: #fff;
+    }
+    .jobs-co__desc { font-size: 13px; color: #555; line-height: 1.9; }
+    .jobs-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .jobs-list li a {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      padding: 14px 18px; border-radius: 12px;
+      border: 2px solid var(--border); background: #fff;
+      font-size: 13px; font-weight: 600; color: var(--dark);
+      text-decoration: none; transition: border-color .18s, background .18s, transform .18s;
+    }
+    .jobs-list li a:hover { border-color: var(--teal); background: var(--teal-lt); transform: translateX(4px); }
+    .jobs-arrow { font-size: 16px; color: var(--teal); flex-shrink: 0; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero__inner        { grid-template-columns: 1fr; }
@@ -308,6 +338,10 @@
       .forwhom__inner     { grid-template-columns: 1fr; }
       .nav__links         { display: none; }
       img                 { max-width: 100%; height: auto; }
+    }
+    @media (max-width: 900px) {
+      .jobs-list          { grid-template-columns: 1fr; }
+      .jobs-co__hd        { grid-template-columns: 1fr; }
     }
     @media (max-width: 540px) {
       .overview__inner    { grid-template-columns: 1fr; }
@@ -339,7 +373,7 @@
       <li><a href="#about" class="nl-a">イベントについて</a></li>
       <li><a href="#features" class="nl-b">コンテンツ</a></li>
       <li><a href="#program" class="nl-c">スケジュール</a></li>
-      <li><a href="#apply" class="nl-d">応募する</a></li>
+      <li><a href="#jobs" class="nl-d">対象求人</a></li>
     </ul>
     <a href="#apply" class="nav__cta">参加申し込み →</a>
   </div>
@@ -645,6 +679,129 @@
   </div>
 </section>
 
+<!-- ══ JOBS ══ -->
+<section class="jobs-sec sec" id="jobs">
+  <div class="sec-inner">
+    <span class="sec-label">Open Positions</span>
+    <h2 class="sec-title">対象求人一覧</h2>
+    <p style="font-size:14px;color:#555;line-height:1.9;margin-bottom:48px;">イベント当日にブースで話せる社員が担う職種の求人一覧です。<br>気になる求人をクリックして詳細を確認し、当日直接聞いてみよう！</p>
+
+    <!-- ── NHN JAPAN ── -->
+    <div class="jobs-co">
+      <div class="jobs-co__hd">
+        <div class="jobs-co__logo-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.29 47.39" aria-label="NHN JAPAN">
+            <style>.njj{fill:#191919}</style>
+            <polygon class="njj" points="62.57 26.02 68.57 26.02 68.57 .64 62.57 .64 62.57 10.42 51.72 10.42 51.72 .64 45.73 .64 45.73 26.02 51.72 26.02 51.72 16.7 51.72 16.21 62.57 16.24 62.57 16.7 62.57 26.02"/>
+            <polygon class="njj" points="16.73 15.88 5.39 0 0 2.8 0 26.04 5.86 26.04 5.86 10.73 17.74 26.87 17.77 26.87 22.66 24.3 22.66 .66 16.73 .66 16.73 15.88"/>
+            <polygon class="njj" points="97.5 10.73 109.38 26.87 109.4 26.87 114.29 24.3 114.29 .66 108.37 .66 108.37 15.88 97.03 0 91.63 2.8 91.63 26.04 97.5 26.04 97.5 10.73"/>
+            <path class="njj" d="M34.38,47.21c-.34-.12-.74-.32-1.13-.79-.18-.23-.32-.47-.47-.83l1.7-.81c.09.2.21.43.34.55.15.16.36.21.59.21.2,0,.46-.11.57-.3.09-.16.15-.35.16-.69v-.35s.01-5.14.01-5.14h1.92v5.47c0,.38-.03.74-.14,1.07-.24.73-.71,1.24-1.4,1.56-.35.16-.79.22-1.19.22-.33,0-.65-.06-.97-.18Z"/>
+            <path class="njj" d="M49.59,47.16h-2l-.6-1.59h-3.62l-.59,1.59h-1.95l3.02-8.1h2.62l3.12,8.1ZM46.35,43.85l-1.18-3.15-1.16,3.15h2.34Z"/>
+            <path class="njj" d="M52.25,39.06h3.76c.42,0,.96.07,1.31.21.46.19.83.47,1.13.83.41.52.63,1.17.63,1.88,0,.47-.1.92-.28,1.33-.26.56-.69,1.04-1.26,1.31-.43.2-1.02.32-1.52.32h-1.85v2.23h-1.91v-8.1ZM55.85,43.14c.34,0,.59-.08.73-.15.43-.2.53-.61.53-1.01,0-.44-.15-.8-.62-1-.16-.07-.44-.11-.74-.11h-1.59v2.27h1.69Z"/>
+            <path class="njj" d="M69.71,47.16h-2l-.6-1.59h-3.62l-.59,1.59h-1.95l3.02-8.1h2.62l3.12,8.1ZM66.47,43.85l-1.18-3.15-1.16,3.15h2.34Z"/>
+            <path class="njj" d="M72.3,39.06h1.88l3.43,4.85v-4.85h1.92v8.1h-1.89l-3.43-4.86v4.86h-1.91v-8.1Z"/>
+          </svg>
+          <span class="jobs-co__badge" style="background:var(--dark);">持株会社・管理部門</span>
+        </div>
+        <p class="jobs-co__desc">NHNグループ全体の経営管理・事業支援を担うグループの中核企業。人事・法務・財務・IT基盤など、グループ横断の機能を一手に担い、各社の事業成長をバックオフィスから支えています。</p>
+      </div>
+      <ul class="jobs-list">
+        <li><a href="https://recruit.nhn-japan.com/recruits/japan/4112595155004452178" target="_blank" rel="noopener">
+          <span>法務（IT情報セキュリティ）</span><span class="jobs-arrow">→</span>
+        </a></li>
+        <li><a href="https://hrmos.co/pages/nhnrecruit/jobs/00000101" target="_blank" rel="noopener">
+          <span>人事（教育）</span><span class="jobs-arrow">→</span>
+        </a></li>
+        <li><a href="https://hrmos.co/pages/nhnrecruit/jobs/00000101" target="_blank" rel="noopener">
+          <span>人事企画</span><span class="jobs-arrow">→</span>
+        </a></li>
+        <li><a href="https://hrmos.co/pages/nhnrecruit/jobs/00000101" target="_blank" rel="noopener">
+          <span>財務・経理</span><span class="jobs-arrow">→</span>
+        </a></li>
+      </ul>
+    </div>
+
+    <!-- ── NHN PlayArt ── -->
+    <div class="jobs-co">
+      <div class="jobs-co__hd">
+        <div class="jobs-co__logo-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 44.84" aria-label="NHN PlayArt" style="height:32px;">
+            <style>
+              .paj1{fill:#ff1300}.paj2{fill:#00abb5}.paj3{fill:#ffa200}.paj4{fill:#ff009e}
+              .paj5{fill:#191919}.paj6{fill:#00ce00}.paj7{fill:#009dff}.paj8{fill:#c334ff}
+            </style>
+            <path class="paj4" d="M13.11,25.18v6.55h-6.55v-6.55h6.55v-6.07c0-.26-.21-.48-.48-.48H.48c-.26,0-.48.21-.48.48v25.25c0,.26.21.48.48.48h5.59c.26,0,.48-.21.48-.48v-6.07h12.63c.26,0,.48-.21.48-.48v-12.15c0-.26-.21-.48-.48-.48h-6.07Z"/>
+            <path class="paj8" d="M30.3,18.63h-5.59c-.26,0-.48.21-.48.48v18.7c0,.26.21.48.48.48h6.07v-19.18c0-.26-.21-.48-.48-.48Z"/>
+            <path class="paj8" d="M43.4,38.29h-12.63v6.07c0,.26.21.48.48.48h12.15c.26,0,.48-.21.48-.48v-5.59c0-.26-.21-.48-.48-.48Z"/>
+            <path class="paj7" d="M61.55,18.63h-6.07c-.26,0-.48.21-.48.48v6.07h6.55v6.55h-6.55v-6.55h-6.07c-.26,0-.48.21-.48.48v18.7c0,.26.21.48.48.48h5.59c.26,0,.48-.21.48-.48v-6.07h6.55v6.07c0,.26.21.48.48.48h5.59c.26,0,.48-.21.48-.48v-25.25c0-.26-.21-.48-.48-.48h-6.07Z"/>
+            <path class="paj2" d="M164.52,18.63h-18.7c-.26,0-.48.21-.48.48v5.59c0,.26.21.48.48.48h6.07v19.18c0,.26.21.48.48.48h5.59c.26,0,.48-.21.48-.48v-19.18h6.07c.26,0,.48-.21.48-.48v-5.59c0-.26-.21-.48-.48-.48Z"/>
+            <path class="paj6" d="M140.78,19.11v12.15c0,.26-.21.48-.48.48h-6.07v-6.55h-6.55v6.55h6.55v6.55h-6.55v6.07c0,.26-.21.48-.48.48h-5.59c-.26,0-.48-.21-.48-.48v-25.25c0-.26.21-.48.48-.48h18.7c.26,0,.48.21.48.48ZM134.7,44.84h5.59c.26,0,.48-.21.48-.48v-5.59c0-.26-.21-.48-.48-.48h-6.07v6.07c0,.26.21.48.48.48Z"/>
+            <path class="paj1" d="M103.93,18.63c-.26,0-.48.21-.48.48v6.07h6.55v6.55h-6.55v-6.55h-6.07c-.26,0-.48.21-.48.48v18.7c0,.26.21.48.48.48h5.59c.26,0,.48-.21.48-.48v-6.07h6.55v6.07c0,.26.21.48.48.48h5.59c.26,0,.48-.21.48-.48v-25.25c0-.26-.21-.48-.48-.48h-12.15Z"/>
+            <path class="paj3" d="M78.74,18.63h-5.59c-.26,0-.48.21-.48.48v12.15c0,.26.21.48.48.48h6.07v-12.63c0-.26-.21-.48-.48-.48Z"/>
+            <path class="paj3" d="M91.85,18.63h-5.59c-.26,0-.48.21-.48.48v12.63h-6.55v6.07c0,.26.21.48.48.48h6.07v6.07c0,.26.21.48.48.48h5.59c.26,0,.48-.21.48-.48v-25.25c0-.26-.21-.48-.48-.48Z"/>
+            <polygon class="paj5" points="25.46 10.59 27.9 10.59 27.9 .26 25.46 .26 25.46 4.24 21.05 4.24 21.05 .26 18.61 .26 18.61 10.59 21.05 10.59 21.05 6.8 21.05 6.6 25.46 6.61 25.46 6.8 25.46 10.59"/>
+            <polygon class="paj5" points="6.81 6.46 2.2 0 0 1.14 0 10.6 2.39 10.6 2.39 4.37 7.22 10.93 7.23 10.93 9.22 9.89 9.22 .27 6.81 .27 6.81 6.46"/>
+            <polygon class="paj5" points="39.67 4.37 44.51 10.93 44.52 10.93 46.51 9.89 46.51 .27 44.1 .27 44.1 6.46 39.48 0 37.29 1.14 37.29 10.6 39.67 10.6 39.67 4.37"/>
+          </svg>
+          <span class="jobs-co__badge" style="background:var(--coral);">ゲーム・エンタメ</span>
+        </div>
+        <p class="jobs-co__desc">「LINE：ディズニー ツムツム」「妖怪ウォッチ ぷにぷに」「#コンパス」など、累計数千万DLの人気スマホゲームを開発・運営するエンターテインメント企業。企画・開発・デザインの専門家が集まり、世界中のユーザーに楽しさを届けています。</p>
+      </div>
+      <ul class="jobs-list">
+        <li><a href="https://recruit.nhn-japan.com/recruits/playart/4228667714969035722" target="_blank" rel="noopener">
+          <span>総合職（企画）</span><span class="jobs-arrow">→</span>
+        </a></li>
+        <li><a href="https://recruit.nhn-japan.com/recruits/playart/3974927973630235692?type=list&jobGroupId=10000002" target="_blank" rel="noopener">
+          <span>ゲームプランナー</span><span class="jobs-arrow">→</span>
+        </a></li>
+        <li><a href="https://recruit.nhn-japan.com/recruits/playart/3815458064683071922?type=list&jobGroupId=10000003" target="_blank" rel="noopener">
+          <span>ゲームグラフィックデザイナー</span><span class="jobs-arrow">→</span>
+        </a></li>
+        <li><a href="https://recruit.nhn-japan.com/recruits/playart/3813411594720468500" target="_blank" rel="noopener">
+          <span>ゲームプログラマ</span><span class="jobs-arrow">→</span>
+        </a></li>
+      </ul>
+    </div>
+
+    <!-- ── NHN Techorus ── -->
+    <div class="jobs-co">
+      <div class="jobs-co__hd">
+        <div class="jobs-co__logo-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.39 38.67" aria-label="NHN Techorus">
+            <style>.tcj1{fill:#181818}.tcj2{fill:#191919}.tcj3{fill:#0027b1}</style>
+            <polygon class="tcj2" points="22.16 9.22 24.29 9.22 24.29 .23 22.16 .23 22.16 3.69 18.32 3.69 18.32 .23 16.2 .23 16.2 9.22 18.32 9.22 18.32 5.91 18.32 5.74 22.16 5.75 22.16 5.91 22.16 9.22"/>
+            <polygon class="tcj2" points="5.93 5.62 1.91 0 0 .99 0 9.22 2.08 9.22 2.08 3.8 6.28 9.52 6.29 9.52 8.03 8.61 8.03 .23 5.93 .23 5.93 5.62"/>
+            <polygon class="tcj2" points="34.53 3.8 38.74 9.52 38.75 9.52 40.48 8.61 40.48 .23 38.38 .23 38.38 5.62 34.37 0 32.46 .99 32.46 9.22 34.53 9.22 34.53 3.8"/>
+            <path class="tcj1" d="M21.95,16.18h16.48v4.86h-11.31v3.59l9.97-.03v4.83l-9.97.03v3.68h11.31v4.86h-16.48v-21.83Z"/>
+            <path class="tcj1" d="M43.69,34.75c-1.73-2.01-2.74-4.65-2.74-7.63,0-3.56,1.4-6.6,3.77-8.69,2.07-1.79,4.83-2.83,7.96-2.83,2.04,0,3.83.36,5.29,1.03,1.25.58,2.58,1.58,3.71,2.98l-3.77,3.16c-.79-.79-1.58-1.37-2.52-1.73-.79-.3-1.67-.49-2.58-.49-1.92,0-3.25.55-4.41,1.49-1.43,1.19-2.28,2.95-2.28,5.08,0,1.82.61,3.47,1.7,4.62,1.19,1.28,2.98,1.95,4.99,1.95,1.03,0,2.01-.21,2.8-.58,1-.43,1.85-1.09,2.61-2.04l3.8,2.86c-1,1.46-2.13,2.58-3.53,3.37-1.55.88-3.43,1.34-5.81,1.34-3.71,0-6.87-1.49-9-3.89Z"/>
+            <path class="tcj1" d="M85.04,38.07h-5.17v-8.45h-9.33v8.45h-5.17v-21.89h5.17v8.42h9.33v-8.42h5.17v21.89Z"/>
+            <path class="tcj1" d="M91.92,35.48c-2.16-2.07-3.37-5.02-3.37-8.33s1.22-6.26,3.37-8.33c2.1-2.01,4.95-3.19,8.18-3.19s6.08,1.19,8.18,3.19c2.16,2.07,3.37,5.02,3.37,8.33s-1.22,6.26-3.37,8.33c-2.1,2.01-4.95,3.19-8.18,3.19s-6.08-1.19-8.18-3.19ZM104.81,31.71c1.06-1.19,1.67-2.71,1.67-4.56s-.61-3.37-1.67-4.56c-1.16-1.25-2.74-1.98-4.71-1.98s-3.59.73-4.74,1.98c-1.06,1.19-1.64,2.71-1.64,4.56s.61,3.37,1.67,4.56c1.16,1.25,2.74,1.98,4.71,1.98s3.56-.73,4.71-1.98Z"/>
+            <path class="tcj1" d="M115.15,16.18h9.7c.4,0,1.49.09,1.88.15,1.82.3,2.61.76,3.62,1.49,2.01,1.46,2.86,3.65,2.86,6.17,0,2.31-.94,4.59-2.89,6.11l3.19,7.96h-5.62l-2.55-6.32c-1.58.06-3.89.03-5.02,0v6.32h-5.17v-21.89ZM124.4,26.97c.88,0,1.85-.24,2.31-.55.76-.52,1.25-1.43,1.25-2.43,0-1.06-.36-1.95-1.28-2.49-.52-.3-1.64-.4-2.1-.4h-4.26v5.87h4.07Z"/>
+            <path class="tcj1" d="M141.09,37.55c-1.92-1-3.22-2.49-3.98-4.47-.36-1-.55-2.31-.55-3.53v-13.37h5.17v12.71c0,.58.15,1.67.3,2.1.36,1.06.94,1.76,1.76,2.16,1.03.49,1.88.52,2.34.52s1.31-.03,2.34-.52c.82-.4,1.4-1.09,1.76-2.16.15-.43.3-1.52.3-2.1v-12.71h5.17v13.37c0,1.22-.18,2.52-.55,3.53-.76,1.98-2.07,3.47-3.98,4.47-1.4.73-3.16,1.12-5.05,1.12s-3.65-.4-5.05-1.12Z"/>
+            <path class="tcj1" d="M164.08,38.04c-2.07-.64-3.56-1.64-5.23-3.31l2.92-3.8c1.25,1.03,2.13,1.7,3.07,2.16,1.06.52,2.07.73,3.25.73.76,0,1.34-.09,1.82-.27.67-.24,1.25-.7,1.28-1.43.06-.85-.4-1.37-1.22-1.79-.55-.27-1.34-.49-2.37-.73-1.43-.33-2.98-.73-4.32-1.49-1.06-.61-1.88-1.34-2.46-2.22-.67-1.03-.97-2.16-1.03-3.31-.03-.94.15-1.85.55-2.74.64-1.4,1.76-2.52,3.16-3.25,1.37-.73,2.8-1,4.35-1.03,1.76-.03,3.25.15,4.53.64,1.52.58,2.8,1.4,4.01,2.74l-3.22,3.47c-.82-.76-1.49-1.22-2.31-1.55-.79-.3-1.67-.43-2.77-.43-.33,0-1.19.06-1.67.21-.88.3-1.4.82-1.46,1.67-.03.43,0,.82.33,1.25.55.67,2.01,1,3.43,1.37,1.49.4,3.47.97,4.77,1.82,1.25.79,1.98,1.67,2.49,3.04.33.88.36,1.67.36,2.52,0,1.37-.67,2.83-1.58,3.83-1.49,1.67-3.86,2.55-6.54,2.55-1.55,0-3.1-.33-4.16-.64Z"/>
+            <polygon class="tcj3" points="6.72 16.16 0 16.15 0 21.16 6.72 21.16 6.72 16.16"/>
+            <polygon class="tcj1" points="6.72 16.16 6.72 21.16 6.72 38.07 11.88 38.07 11.88 21.16 18.6 21.16 18.6 16.18 6.72 16.16"/>
+          </svg>
+          <span class="jobs-co__badge" style="background:#0027b1;">クラウド・DX</span>
+        </div>
+        <p class="jobs-co__desc">AWS・Google Cloud最上位パートナーとして、クラウド総合支援サービス「C-Chorus」を展開。クラウド導入・運用から生成AI・データ分析の活用まで、企業のデジタル変革（DX）を幅広く支援しています。</p>
+      </div>
+      <ul class="jobs-list">
+        <li><a href="https://hrmos.co/pages/nhn-techorus/jobs/5002" target="_blank" rel="noopener">
+          <span>総合職</span><span class="jobs-arrow">→</span>
+        </a></li>
+        <li><a href="https://hrmos.co/pages/nhn-techorus/jobs/1004" target="_blank" rel="noopener">
+          <span>クラウドエンジニア</span><span class="jobs-arrow">→</span>
+        </a></li>
+        <li><a href="https://hrmos.co/pages/nhn-techorus/jobs/3007" target="_blank" rel="noopener">
+          <span>開発エンジニア</span><span class="jobs-arrow">→</span>
+        </a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 <!-- ══ CTA ══ -->
 <section class="cta-sec" id="apply">
   <div style="position:absolute;width:380px;height:380px;border-radius:50%;background:rgba(0,0,0,.08);top:-140px;right:-80px;pointer-events:none;"></div>
@@ -658,7 +815,15 @@
 
     <span style="font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.75);display:block;margin-bottom:12px;">Entry</span>
     <h2>参加を申し込む</h2>
-    <p>定員に達し次第、受付を終了します。<br>お早めにお申し込みください。<br><span style="font-size:13px;color:rgba(255,255,255,.75);">※参加枠の都合上、ご参加いただけない場合がございます。<br>参加可否は、5月22日（金）に、メールアドレス宛にご連絡いたします。</span></p>
+    <p>定員に達し次第、受付を終了します。<br>お早めにお申し込みください。</p>
+    <div style="background:rgba(0,0,0,.25);border:2px solid rgba(255,255,255,.5);border-radius:16px;padding:20px 24px;margin-bottom:32px;text-align:left;">
+      <p style="font-size:14px;font-weight:800;color:#FFE57A;margin-bottom:8px;">⚠️ 参加には事前確認メールが必要です</p>
+      <p style="font-size:13px;color:rgba(255,255,255,.92);line-height:1.9;margin:0;">
+        参加枠の都合上、ご参加いただけない場合がございます。<br>
+        参加可否は <strong style="color:#fff;">5月22日（金）</strong> に、ご登録のメールアドレス宛にご連絡いたします。<br>
+        <strong style="color:#FFE57A;font-size:14px;">📧 メールが届いた方のみ、当日ご参加いただけます。</strong>
+      </p>
+    </div>
     <div class="cta-deadline">⏰ 申し込み締め切り：2026年5月20日（水）23:59</div><br>
     <a href="https://forms.gle/HCw9sLSsLCv3NBJv5" target="_blank" rel="noopener" class="cta-btn">📋 &nbsp;Google フォームから申し込む</a>
     <p class="cta-note">ご入力いただいた情報は本イベントの運営のみに使用します。</p>
